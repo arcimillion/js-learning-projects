@@ -1,0 +1,43 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: black;
+    color:whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    margin-top: 10px;
+}
+
+.content{
+    height: 89.75vh;
+    width: 100%;
+    background-color: grey;
+    color: white;
+    text-align: center;
+}
+
+.big{
+    font-size: 50px;
+    margin:20px
+}
+
+input{
+    text-align: center;
+    height: 40px;
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: larger;
+    border: none;
+}
+
+button{
+    background-color: black;
+    color: whitesmoke;
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
