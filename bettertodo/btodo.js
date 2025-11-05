@@ -4,21 +4,21 @@ const ul = document.querySelector('ul');
 
 loadTodos();
 
-b.addEventListener('click', add);
+b.addEventListener('click',add);
 
-function add() {
-    if (i.value === '') {
+function add(){
+    if (i.value==='') {
         return;
     }
 
-    let l = document.createElement('li');
-    l.innerText = i.value;
+    let l=document.createElement('li');
+    l.innerText=i.value;
 
-    const d = document.createElement('button');
-    d.innerText = 'X';
-    d.style.backgroundColor = 'red';
-    d.style.color = 'white';
-    d.addEventListener('click', rem);
+    const d=document.createElement('button');
+    d.innerText='X';
+    d.style.backgroundColor='red';
+    d.style.color='white';
+    d.addEventListener('click',rem);
 
     l.append(d);
     ul.appendChild(l);
@@ -27,16 +27,15 @@ function add() {
     saveTodos();
 }
 
-function rem(event) {
+function rem(event){
     this.parentElement.remove();
-    saveTodos();
-}
+    saveTodos();}
 
 function saveTodos() {
     const todos = [];
     const listItems = document.querySelectorAll('ul li');
     
-    listItems.forEach(function(item) {
+    listItems.forEach(function(item){
         const itemText = item.firstChild.textContent;
         todos.push(itemText);
     });
